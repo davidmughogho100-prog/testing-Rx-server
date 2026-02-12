@@ -1,6 +1,6 @@
 # Test Case: Login Page
 
-## Test Case ID: TC-LOGIN-OO1
+# Test Case ID: TC-LOGIN-OO1
 
 # Title:
     verify login functionality with valid credentials.
@@ -21,6 +21,15 @@
 # Expected Result:
     --> User is successfully logged in to the app.
     --> User is redirected to the dashboard or the home page of the application
-    --> Userr session is created and maintained until logout.
+    --> User session is created and maintained until logout.
 
+# Actual Result:
+    --> Login sucessfull
+    --> User session made
+    --> User redirected to dashboard
 
+# status
+    Pass
+
+# severity:
+    N/a
