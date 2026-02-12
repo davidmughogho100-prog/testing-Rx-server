@@ -23,3 +23,14 @@
 # Expected Result:
     Scrolling left inside the email/username field should have only the first few words of the pasted document.
     Scrolling left inside the password field should have only two or three words from the document
+
+# Actual Result:
+    --> the username field allowed the entire document to be pasted
+    --> the password field allowed the entire document to be pasted
+
+# status:
+    Test Failed
+
+# severity:
+    critical
+
