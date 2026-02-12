@@ -18,9 +18,30 @@
     4. click the login button
 
 # Expected Result:
-    --> User should not be allowed to login due to empty credentials fields.
     --> Error should occur indicating that username/email field is required.
     --> Error should occur indicating that the password field is required.
     --> The user should be kept on the login page until gives valid credentials
     --> no user session is created because of empty input fields
+
+# Actual Result:
+    -->  Error username required
+    -->  Error password required 
+    -->  no login made, user stays on the login page
+    -->  no user session created
+
+# status:
+    Test Passed
+
+# Severity:
+    N/a
+    
+
+
+
+
+
+
+
+
+
 
