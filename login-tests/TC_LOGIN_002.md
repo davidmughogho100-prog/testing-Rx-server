@@ -25,7 +25,7 @@
 
 # Actual Result:
     --> page displays error requiring password
-    --> user is kept on the login page to retry
+    --> user is kept on the login page to enter the password
     --> No session was made for the user
 
 # status

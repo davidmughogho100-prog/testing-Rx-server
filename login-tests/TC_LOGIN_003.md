@@ -23,3 +23,23 @@
     2. The user is kept on the same login page until all valid information is entered.
     3. No user session is made because of incomeplete credentials.
 
+
+# Actual Result:
+    --> displayed error requiring a username
+    --> user kept on login page to enter a username
+    --> no user session was created
+
+# status
+    Test passed
+
+# severity:
+    N/a
+
+
+
+
+
+
+
+
+
