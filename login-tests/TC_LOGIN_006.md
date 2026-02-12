@@ -30,3 +30,5 @@
 # severity:
     critical
 
+# notes:
+    --> this can lead to a denial of service attack
