@@ -29,7 +29,7 @@
     --> User redirected to dashboard
 
 # status
-    Pass
+    Test Passed
 
 # severity:
     N/a

@@ -22,3 +22,25 @@
     --> The page should display an error password is required. 
     --> The user is kept on the same login page.
     --> No session is made for the user until is authorised by giving correct credentials
+
+# Actual Result:
+    --> page displays error requiring password
+    --> user is kept on the login page to retry
+    --> No session was made for the user
+
+# status
+    --> Test passed 
+
+# severity:
+    N/a
+
+
+
+
+
+
+
+
+
+
+
