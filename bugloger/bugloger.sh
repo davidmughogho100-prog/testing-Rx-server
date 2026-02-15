@@ -75,7 +75,7 @@ do
 
     # file writer
 
-    echo "  $step" >> $filename
+    echo " ### $step" >> $filename
 
 
 done
@@ -103,7 +103,7 @@ do
 
     # file writer
 
-    echo "  $res" >> $filename
+    echo " ### $res" >> $filename
 
 
 done
@@ -134,7 +134,7 @@ do
 
     # file writer
 
-    echo "  $exp" >> $filename
+    echo " ### $exp" >> $filename
 
 
 done
