@@ -38,8 +38,12 @@ echo "# Title:" >> $filename
 echo "  $title" >> $filename
 echo " " >> $filename
 
-echo "# Module" >> $filename
+echo "# Module:" >> $filename
 echo "  $module" >> $filename
+echo " " >> $filename
+
+echo "# Severity:" >>$filename
+echo "  $severity" >> $filename
 echo " " >> $filename
 
 echo "# priority: " >> $filename
