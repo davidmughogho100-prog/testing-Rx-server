@@ -1,0 +1,83 @@
+Vulnerability assesment Report
+-------------------------------
+
+Executive Summary
+----------------
+    Target application 
+        -->  rx2 server
+
+    Vulnerability name 
+        -->  Missing Rate Limiting at the login page
+
+    Severity:
+        --> High
+
+    status:
+        --> open / unremediated
+
+Vulnerability Description:
+--------------------------
+
+    --> The web application login endpoint does not restrict the number of times a user can retry a
+    --> failed login from a single ip address. This allows a remote attack try thousands of passwords
+    --> for an account until they find the correct password. An attacker can use automated tools like
+    --> <ffuf> to brute the correct account and its password. This is possible because the login page 
+    --> does not implement account lockout policy or rate limiting.
+
+Technical Impact:
+-----------------
+    --> Unauthorized Access:
+        Attackers can use they passwords and accounts found to login to the application.
+
+    --> Account takeover:
+        Attackers can simply change the password of the account once they login hence preventing
+        real users from accessing the application.
+
+    --> Resource Exaustion:
+        Rapid requests can spike the CPU usage of the web server leading to a denial of service attack(DOS).
+
+Proof of Concept(PoC):
+---------------------
+    The vulnerability was confirmed by using the following steps:
+        --> capture a legitimate login request using burpsuite
+
+        --> modify the request to include the FUZZ keyword in the password field.
+
+        --> execute the bruteforce attack using ffuf with the rockyou.txt password list
+            the command ran:
+                --> ffuf -request login.txt -request-proto https -w /usr/share/wordlists/rockyou.txt 
+
+        --> the tool succesfully identified the correct password due to lack of rate Limiting.
+
+Remediation:
+-----------
+
+    To secure the application implement rate limiting on all pages of the application
+    to stop all automated attacks against it.
+
+Conclusion:
+----------
+    Implementing rate limiting and account lockout policy is a critical line of defense for 
+    any application on the wide world web against bruteforce tools.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
