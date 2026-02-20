@@ -1,0 +1,2 @@
+ID,Source,Req. Timestamp,Method,URL,Code,Reason,RTT,Size Resp. Body,Highest Alert,Note,Tags
+1,Proxy,Tue Feb 17 13:28:53 CAT 2026,GET,https://rx2.skrypt.it/,200,OK,1309,15665,Medium,false,"Form, Password, Script, SetCookie, Comment"
